@@ -20,6 +20,15 @@
 	<link rel="shortcut icon" href="images/favicon/favicon.ico" />
 	<link rel="apple-touch-icon" sizes="180x180" href="images/favicon/apple-touch-icon.png" />
 	<link rel="manifest" href="images/favicon/site.webmanifest" />
+	<style>
+		p {
+			text-align: justify;
+		}
+
+		.align-center p {
+			text-align: center;
+		}
+	</style>
 </head>
 
 <body class="is-preload">
@@ -28,60 +37,87 @@
 	<div id="wrapper" class="divided">
 
 		<!-- Introduction -->
-		<section class="wrapper style1 align-center image-position-center">
-			<div class="inner">
-				<div style="display: flex; align-items: center; justify-content: center; gap: 3rem; flex-wrap: wrap;">
-					<div style="flex: 2; min-width: 300px;">
-						<h1>Francisco Fernández Barroso</h1>
-						<p class="major">Software Engineer, passionate about everything related to videogames.</p>
-						<p class="minor">Professional developer with 4 years of experience in C++ and Python,
-							specializing in Unity and Unreal Engine. Master's degree in Videogame Programming and
-							Bachelor's degree in Computer Engineering. From game jams to thesis projects, I love turning
-							creative ideas into playable realities.</p>
-						<ul class="actions stacked">
-							<li><a href="#projects" class="button big wide smooth-scroll-middle">View My Work</a></li>
-							<li><a href="resources/CV.pdf" class="button big wide" download>Download CV</a></li>
-						</ul>
-						<ul class="icons" style="margin-top: 2rem;">
-							<li><a href="https://github.com/fdezbarroso" class="icon brands style2 fa-github"><span
-										class="label">GitHub</span></a></li>
-							<li><a href="https://www.linkedin.com/in/fdezbarroso/"
-									class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a>
-							</li>
-							<li><a href="https://x.com/Franchocratico" class="icon brands style2 fa-twitter"><span
-										class="label">Twitter</span></a></li>
-							<li><a href="https://franchocratico.itch.io/" class="icon brands style2 fa-itch-io"><span
-										class="label">Itch.io</span></a></li>
-							<li><a href="mailto:f.fdezbarroso@gmail.com" class="icon style2 fa-envelope"><span
-										class="label">Email</span></a></li>
-						</ul>
-					</div>
-					<div style="flex: 1; min-width: 250px; max-width: 350px;">
-						<img src="images/formal-photo.jpg" alt="Francisco Fernandez"
-							style="width: 100%; border-radius: 50%; box-shadow: 0 10px 20px rgba(0,0,0,0.5);" />
-					</div>
-				</div>
+		<section
+			class="banner style3 orient-left content-align-left image-position-center onload-content-fade-right onload-image-fade-in">
+			<div class="content">
+				<h1 style="font-size: 2.5rem; line-height: 1.2;">Francisco Fernández Barroso</h1>
+				<p class="major">Software Engineer, focused on game development.</p>
+				<p class="minor">Professional developer with 4 years of experience in C++ and Python, currently working
+					at Pix4D, while pursuing a Master's in Videogame Programming.<br><br>
+
+					I work with Unity and Unreal Engine, and I enjoy tackling complex technical problems. From building
+					game systems to creating emulators, I love bringing cool ideas to life through code.</p>
+				<ul class="actions stacked">
+					<li><a href="resources/CV.pdf" class="button big wide" download>Download CV</a></li>
+				</ul>
+				<ul class="icons" style="margin-top: 2rem;">
+					<li><a href="https://github.com/fdezbarroso" class="icon brands style2 fa-github"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="https://www.linkedin.com/in/fdezbarroso/"
+							class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a>
+					</li>
+					<li><a href="https://x.com/Franchocratico" class="icon brands style2 fa-twitter"><span
+								class="label">Twitter</span></a></li>
+					<li><a href="https://franchocratico.itch.io/" class="icon brands style2 fa-itch-io"><span
+								class="label">Itch.io</span></a></li>
+					<li><a href="https://backloggd.com/u/ekil1fiti/" class="icon style2 fa-bookmark"><span
+								class="label">Backloggd</span></a></li>
+					<li><a href="mailto:f.fdezbarroso@gmail.com" class="icon style2 fa-envelope"><span
+								class="label">Email</span></a></li>
+				</ul>
+			</div>
+			<div class="image">
+				<img src="images/formal-photo.jpg" alt="Francisco Fernandez" />
+			</div>
+		</section>
+
+		<!-- Work Experience -->
+		<section class="spotlight style2 orient-left content-align-left image-position-center">
+			<div class="content">
+				<h2>Professional Experience</h2>
+				<p class="major"><strong>Software Engineer @ Pix4D</strong> (2022 - Present)</p>
+				<p class="minor">
+					Started as an intern and progressed to Professional engineer, gaining valuable experience in
+					production software development, machine learning workflows, and technical leadership.<br><br>
+
+					• Led integration of masks I/O in Pix4Dmatic, improving command query management systems.<br>
+					• Developed QA, CI, and performance tracking systems for analysis of image masking results.<br>
+					• Contributed to segmentation mask integration using C++ and Qt.<br>
+					• Supervised annotators for QA data labeling campaigns.<br>
+					• Built QA and CI pipelines for machine learning systems generating BIM models.<br>
+					• Enhanced Pix4Dsurvey's pole detection algorithm, achieving 15% F1-score improvement.<br>
+					• Led multiple QA data provisioning and annotation campaigns.<br><br>
+				</p>
+			</div>
+			<div class="image">
+				<img src="images/pix4d-logo.png" alt="Pix4D Logo"
+					style="object-fit: contain; background-color: #ffffff;" />
 			</div>
 		</section>
 
 		<!-- Major Projects -->
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in"
-			id="projects">
+		<section class="spotlight style1 orient-right content-align-left image-position-center" id="projects">
 			<div class="content">
-				<h2>Lilith</h2>
+				<h2>Lilith: Rise Of The Fallen</h2>
 				<p class="major"><strong>Master's Degree Thesis Project - Unreal Engine 5</strong></p>
-				<p class="major">An action roguelike videogame in which you corrupt the map, built as part of a large
-					multidisciplinary team, consisting of over 20 people.</p>
+				<p class="major">An action roguelike where you corrupt the environment to gain power, built with a team
+					of over 20 people.</p>
 				<p class="minor">
-					In it I took ownership of many features, helping with others as needed, including: <br> Setup of
-					the Perforce depot and Jenkins jobs and scripts, the code's structure, with a Gameplay Ability
-					Systems and event-based architecture, enemy spawning and pathfinding, the Dash, Gluttony and Greed
-					abilities, the application of corruption effects, the progression system, UI, and sound, along with
-					the FMOD integration. <br> Still in development.
+					Main achievements:<br>
+					• Set up and maintained Perforce repository and Jenkins build pipeline.<br>
+					• Designed code architecture using Gameplay Ability System and event-driven patterns.<br>
+					• Built enemy spawning, and pathfinding, and improved AI controller.<br>
+					• Implemented player abilities: Dash, Gluttony, and Greed.<br>
+					• Implemented stochastic cellular automata on a hexagonal grid for corruption spreading.<br>
+					• Built the full progression system, along with the game's UI with custom navigation.<br>
+					• Handled game optimization, both on the graphics and logic side.<br>
+					• Integrated FMOD for audio, with a component pooling system.<br><br>
+
+					Still in development.
 				</p>
 				<ul class="actions stacked">
 					<li><a href="https://store.steampowered.com/app/3587510/Lilith_Rise_of_the_Fallen/"
-							class="button">View Project</a></li>
+							class="button">View on Steam</a></li>
 				</ul>
 			</div>
 			<div class="image">
@@ -89,13 +125,15 @@
 			</div>
 		</section>
 
-		<section class="spotlight style1 orient-left content-align-left image-position-center onscroll-image-fade-in">
+		<section class="spotlight style1 orient-left content-align-left image-position-center">
 			<div class="content">
 				<h2>Gou</h2>
-				<p class="major"><strong>Game Jam Project Expansion - Unity</strong></p>
-				<p class="minor">Originally created during Mini Jam 182: Horror, Gou is now being expanded into a full
-					game. It is an atmospheric horror side-scroller game, with a feudal Japanese setting.<br>
-					Still in development.</p>
+				<p class="major"><strong>Atmospheric Horror Game - Unity</strong></p>
+				<p class="minor">Started as a Mini Jam 182: Horror entry, now expanding it into a full game. It's an
+					atmospheric horror side-scroller set in feudal Japan. Working on improving the lighting, audio, AI
+					logic, and adding more content.<br><br>
+
+					Currently in development.</p>
 				<ul class="actions stacked">
 					<li><a href="https://paxcu.itch.io/gou/" class="button">Play Demo</a></li>
 				</ul>
@@ -106,13 +144,13 @@
 			</div>
 		</section>
 
-		<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in">
+		<section class="spotlight style1 orient-right content-align-left image-position-center">
 			<div class="content">
 				<h2>CHIP-8 Emulator</h2>
-				<p class="major"><strong>A fully functional emulator built from scratch in C++, using SDL2.</strong></p>
-				<p class="minor"> Features include fully accurate instruction implementation, sound generation, and
-					support for the full catalogue. It also offers compatibility options for specific ROMs, such as ones
-					from the COSMAC VIP or the Commodore Amiga.</p>
+				<p class="major"><strong>Built from scratch in C++, using SDL2.</strong></p>
+				<p class="minor">A complete CHIP-8 emulator with accurate instruction execution, sound generation, and
+					support for different ROM types. Includes compatibility options for COSMAC VIP and Commodore Amiga
+					variants. It was a fun project to learn about low-level system emulation.</p>
 				<ul class="actions stacked">
 					<li><a href="https://github.com/fdezbarroso/chip8-emulator/" class="button">View Code</a></li>
 				</ul>
@@ -127,13 +165,13 @@
 			<div class="inner">
 				<h2>Additional Projects</h2>
 				<p class="major">A collection of game jam entries, academic projects, and personal experiments.</p>
-				<div class="items style1 medium onscroll-fade-in">
+				<div class="items style1 medium">
 					<section>
 						<span class="icon solid style2 major fa-gamepad"></span>
 						<h3>Breathdown</h3>
-						<p class="minor"><strong>Game Jam - Unity</strong><br>
-							A horror narrative game with an underwater mall setting and inspired by the backrooms,
-							created during Global Game Jam 2024.
+						<p class="minor"><strong>Global Game Jam 2024 - Unity</strong><br>
+							A horror game set in a flooded mall, inspired by liminal spaces and the backrooms. I worked
+							on core gameplay mechanics, level design, and atmosphere.
 						</p>
 						<ul class="actions" style="justify-content: center;">
 							<li><a href="https://giruza.itch.io/breathdown/" class="button small">Play Game</a></li>
@@ -142,9 +180,10 @@
 					<section>
 						<span class="icon solid style2 major fa-gamepad"></span>
 						<h3>Get Out of My Dungeon!</h3>
-						<p class="minor"><strong>Game Jam - Unity</strong><br>
-							A creative twist on dungeon crawler mechanics where you play as the dungeon master, built
-							for GMTK Game Jam 2023.</p>
+						<p class="minor"><strong>GMTK Game Jam 2023 - Unity</strong><br>
+							A reverse dungeon crawler where you play as the dungeon master defending against heroes. I
+							implemented the AI pathfinding and worked on the level editing.
+						</p>
 						<ul class="actions" style="justify-content: center;">
 							<li><a href="https://t0mpkinz.itch.io/get-out-of-my-dungeon/" class="button small">Play
 									Game</a></li>
@@ -153,9 +192,10 @@
 					<section>
 						<span class="icon solid style2 major fa-gamepad"></span>
 						<h3>Project Acidalia</h3>
-						<p class="minor"><strong>Bachelor's Thesis - Unity</strong><br>
-							A survival game prototype exploring resource management and environmental storytelling, for
-							which I received honors.</p>
+						<p class="minor"><strong>Bachelor's Thesis - Unity (Honors)</strong><br>
+							A survival game prototype about resource management. I received honors for the thesis, in
+							which I covered the solo videogame development process.
+						</p>
 						<ul class="actions" style="justify-content: center;">
 							<li><a href="https://franchocratico.itch.io/project-acidalia/" class="button small">View
 									Project</a></li>
@@ -164,9 +204,11 @@
 					<section>
 						<span class="icon solid style2 major fa-gamepad"></span>
 						<h3>No Circles Allowed</h3>
-						<p class="minor"><strong>Game Jam - Unity</strong><br>
-							An arcade game in which you control gravity, inspired by Flappy Bird and built for the
-							Finally Finish Something Game Jam 2021.</p>
+						<p class="minor"><strong>FFS Jam 2021 - Unity</strong><br>
+							An arcade game where you control gravity, inspired by Flappy Bird, with a big focus on
+							gamefeel.<br>
+							It was the first game I published!
+						</p>
 						<ul class="actions" style="justify-content: center;">
 							<li><a href="https://franchocratico.itch.io/no-circles-allowed/" class="button small">View
 									Project</a></li>
@@ -176,11 +218,23 @@
 						<span class="icon solid style2 major fa-dice-d20"></span>
 						<h3>D&D 5e Feats Rework</h3>
 						<p class="minor"><strong>Game Design - Tabletop</strong><br>
-							A comprehensive redesign/rebalancing of all feats in D&D 5th Edition. Last updated as of
-							June 2021.</p>
+							A comprehensive redesign and/or rebalancing of all feats included in D&D 5th Edition and its
+							expansions.<br>
+							Last updated as of June 2021.</p>
 						<ul class="actions" style="justify-content: center;">
 							<li><a href="resources/feats-overhaul.pdf" class="button small" download>Read It!</a>
 							</li>
+						</ul>
+					</section>
+					<section>
+						<span class="icon solid style2 major fa-star"></span>
+						<h3>Game Reviews & Analysis</h3>
+						<p class="minor"><strong>Ongoing Project - Twitter</strong><br>
+							I've been reviewing every game I finish since 2018. It helps me think critically about game
+							design and what makes games work.</p>
+						<ul class="actions" style="justify-content: center;">
+							<li><a href="https://x.com/Franchocratico/status/1874543917473071348"
+									class="button small">View Reviews</a></li>
 						</ul>
 					</section>
 				</div>
@@ -202,6 +256,8 @@
 								class="label">Twitter</span></a></li>
 					<li><a href="https://franchocratico.itch.io/" class="icon brands style2 fa-itch-io"><span
 								class="label">Itch.io</span></a></li>
+					<li><a href="https://backloggd.com/u/ekil1fiti/" class="icon style2 fa-bookmark"><span
+								class="label">Backloggd</span></a></li>
 					<li><a href="mailto:f.fdezbarroso@gmail.com" class="icon style2 fa-envelope"><span
 								class="label">Email</span></a></li>
 				</ul>
